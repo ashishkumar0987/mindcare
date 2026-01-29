@@ -1,0 +1,440 @@
+.therapist-profile-page {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 80px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.therapist-header {
+  display: flex;
+  gap: 30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.therapist-photo {
+  flex: 0 0 250px;
+}
+
+.therapist-photo img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.therapist-basic-info {
+  flex: 1;
+}
+
+.therapist-name {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.therapist-credentials {
+  color: #5a6c7d;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.therapist-experience {
+  color: #5a6c7d;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.therapist-specialization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.specialization-tag {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.therapist-languages {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.therapist-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  margin-right: 5px;
+}
+
+.star {
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.rating-value {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.review-count {
+  color: #5a6c7d;
+  font-size: 0.9rem;
+}
+
+.therapist-fees {
+  margin-bottom: 15px;
+}
+
+.fees-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.fees-period {
+  color: #5a6c7d;
+  margin-left: 5px;
+}
+
+.availability-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.availability-status.available {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #2e7d32;
+}
+
+.availability-status.busy {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #c62828;
+}
+
+.therapist-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.therapist-about, .therapist-reviews {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.therapist-about h2, .therapist-reviews h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.review-card {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-weight: 600;
+}
+
+.review-rating {
+  display: flex;
+}
+
+.review-date {
+  color: #5a6c7d;
+  font-size: 0.9rem;
+}
+
+.review-comment {
+  line-height: 1.5;
+}
+
+.booking-section {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.booking-step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.day-selection h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.day-button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day-button:hover {
+  background-color: #f1f1f1;
+}
+
+.day-button.selected {
+  background-color: #4a6fa5;
+  color: white;
+  border-color: #4a6fa5;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-slot {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+  background-color: #f1f1f1;
+}
+
+.time-slot.selected {
+  background-color: #4a6fa5;
+  color: white;
+  border-color: #4a6fa5;
+}
+
+.book-appointment-btn {
+  padding: 12px 20px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-appointment-btn:hover {
+  background-color: #3a5a85;
+}
+
+.book-appointment-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.payment-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.appointment-summary {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.appointment-summary h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.appointment-summary p {
+  margin-bottom: 10px;
+}
+
+.payment-form h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-details input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card-row {
+  display: flex;
+  gap: 15px;
+}
+
+.pay-now-btn {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-now-btn:hover {
+  background-color: #3a8f3a;
+}
+
+.confirmation-step {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.confirmation-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 20px auto;
+}
+
+.appointment-details {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.appointment-details p {
+  margin-bottom: 10px;
+}
+
+.join-meeting-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4a6fa5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.join-meeting-btn:hover {
+  background-color: #3a5a85;
+}
+
+.loading-container, .error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+@media (max-width: 992px) {
+  .therapist-header {
+    flex-direction: column;
+  }
+  
+  .therapist-photo {
+    flex: 0 0 auto;
+    width: 200px;
+  }
+  
+  .therapist-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-step {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .days-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .time-slots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
