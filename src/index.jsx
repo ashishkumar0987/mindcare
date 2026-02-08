@@ -7,7 +7,7 @@ import './App.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/mindcare">
       <App />
     </BrowserRouter>
   </React.StrictMode>
