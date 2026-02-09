@@ -35,7 +35,7 @@ import ContactUs from "../pages/ContactUs";
 import SignUp from "../pages/SignUp";
 import AnxietyQuiz from "../pages/AnxietyQuiz";
 import DepressionQuiz from "../pages/DepressionQuiz";
-import OCDQuiz from "../pages/OCDQuiz";
+import OcdQuiz from "../pages/OCDQuiz";
 import ADHDQuiz from "../pages/ADHDQuiz";
 import SupportGroupsMain from "../pages/SupportGroupsMain";
 import Jokes from "../pages/Jokes";
