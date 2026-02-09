@@ -98,7 +98,7 @@ const App = () => {
           <Route path="quiz" element={<Quiz />} />
           <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
           <Route path="depression-quiz" element={<DepressionQuiz />} />
-          <Route path="ocd-quiz" element={<OCDQuiz />} />
+          <Route path="ocd-quiz" element={<OcdTestPage />} />
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
           <Route path="relax" element={<Relax />} />
            <Route path="jokes" element={<Jokes/>} />
