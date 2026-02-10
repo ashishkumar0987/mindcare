@@ -1,3 +1,5 @@
+// src/components/App.jsx
+
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { signOut } from "firebase/auth";
@@ -35,7 +37,12 @@ import ContactUs from "../pages/ContactUs";
 import SignUp from "../pages/SignUp";
 import AnxietyQuiz from "../pages/AnxietyQuiz";
 import DepressionQuiz from "../pages/DepressionQuiz";
-import OcdQuiz from "../pages/OCDQuiz";
+
+// SAHI IMPORT - YEH RAKHO
+import OcdTestPage from "../pages/OcdTestPage";
+
+// GALAT IMPORT DELETE KAR DIYA - import OCDQuiz wali line nahi hai
+
 import ADHDQuiz from "../pages/ADHDQuiz";
 import SupportGroupsMain from "../pages/SupportGroupsMain";
 import Jokes from "../pages/Jokes";
@@ -98,6 +105,7 @@ const App = () => {
           <Route path="quiz" element={<Quiz />} />
           <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
           <Route path="depression-quiz" element={<DepressionQuiz />} />
+          {/* SAHI COMPONENT KA USE KARO */}
           <Route path="ocd-quiz" element={<OcdTestPage />} />
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
           <Route path="relax" element={<Relax />} />
