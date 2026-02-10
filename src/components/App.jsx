@@ -38,10 +38,8 @@ import SignUp from "../pages/SignUp";
 import AnxietyQuiz from "../pages/AnxietyQuiz";
 import DepressionQuiz from "../pages/DepressionQuiz";
 
-// SAHI IMPORT - YEH RAKHO
-import OcdTestPage from "../pages/OcdTestPage";
-
-// GALAT IMPORT DELETE KAR DIYA - import OCDQuiz wali line nahi hai
+// OCDCONTENTPAGE KA IMPORT DELETE KAR DIYA
+// import OcdTestPage from "../pages/OcdTestPage";
 
 import ADHDQuiz from "../pages/ADHDQuiz";
 import SupportGroupsMain from "../pages/SupportGroupsMain";
@@ -105,8 +103,10 @@ const App = () => {
           <Route path="quiz" element={<Quiz />} />
           <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
           <Route path="depression-quiz" element={<DepressionQuiz />} />
-          {/* SAHI COMPONENT KA USE KARO */}
-          <Route path="ocd-quiz" element={<OcdTestPage />} />
+          
+          {/* OCDCONTPAGE KA ROUTE DELETE KAR DIYA */}
+          {/* <Route path="ocd-quiz" element={<OcdTestPage />} /> */}
+          
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
           <Route path="relax" element={<Relax />} />
            <Route path="jokes" element={<Jokes/>} />
