@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Yeh line zaroori hai. Yeh batata hai ki website root par deploy hogi.
+  // Yeh line sabse important hai
   base: '/', 
 })
